@@ -1,7 +1,7 @@
 {
   "name": "@pass-culture/react-native-profiling",
   "title": "React Native Profiling",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Device profiling in react native",
   "main": "index.ts",
   "scripts": {
