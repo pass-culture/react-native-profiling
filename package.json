@@ -1,7 +1,7 @@
 {
   "name": "@pass-culture/react-native-profiling",
   "title": "React Native Profiling",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Device profiling in react native",
   "main": "index.ts",
   "scripts": {
@@ -18,6 +18,9 @@
   "author": {
     "name": "Antoine Garcia",
     "email": "antoine.garcia@passculture.app"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
