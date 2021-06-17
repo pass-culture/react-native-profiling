@@ -1,8 +1,8 @@
-# @pass-culture_react-native-profiling
+# @pass-culture/react-native-profiling
 
 ## Installation
 
-`$ yarn add @pass-culture_react-native-profiling`
+`$ yarn add @pass-culture/react-native-profiling`
 
 ### Android
 
@@ -24,7 +24,7 @@ project(':@pass-culture_react-native-profiling').projectDir = new File(rootProje
 ## Usage
 
 ```typescript
-import Profiling from "@pass-culture_react-native-profiling";
+import Profiling from "@pass-culture/react-native-profiling";
 
 Profiling.profileDevice(ordId, fbServer, (sessionId) => console.log(sessionId));
 ```
