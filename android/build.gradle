@@ -73,8 +73,8 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    implementation(name:'TmxProfiling', ext:'aar')
-    implementation(name:'TmxProfilingConnections', ext:'aar')
+    compile(name:'TmxProfiling', ext:'aar')
+    compile(name:'TmxProfilingConnections', ext:'aar')
 }
 
 def configureReactNativePom(def pom) {
