@@ -27,8 +27,19 @@ Add the xcframeworks to the Frameworks of your application. Make sure they are e
 
 ## Usage
 
+## Android and iOS
+
 ```typescript
 import Profiling from "@pass-culture/react-native-profiling";
 
 Profiling.profileDevice(ordId, fbServer, (sessionId) => console.log(sessionId));
+```
+
+### Web 
+
+
+```typescript
+import Profiling from "@pass-culture/react-native-profiling";
+
+Profiling.profileDevice(ordId, fbServer, (sessionId) => console.log(sessionId), getSessionId, captureException);
 ```
