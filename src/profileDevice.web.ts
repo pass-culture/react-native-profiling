@@ -27,7 +27,7 @@ const profileDevice = async (
     .then(({ sessionId }: { sessionId: string }) => {
       if (!sessionId) {
         captureException(
-          'GET /native/v1/user_profiling/session_id did not return a sessionId: profiling skipped'
+          'Fail to read user_profiling/session_id with getSessionId: profiling skipped'
         )
         return
       }
