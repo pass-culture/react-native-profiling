@@ -1,8 +1,8 @@
 {
   "name": "@pass-culture/react-native-profiling",
   "title": "React Native Profiling",
-  "version": "1.0.19",
-  "description": "Device profiling in react native",
+  "version": "1.1.2",
+  "description": "Device profiling in react native and react native web",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +22,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "peerDependencies": {
