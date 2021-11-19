@@ -27,19 +27,18 @@ Add the xcframeworks to the Frameworks of your application. Make sure they are e
 
 ## Usage
 
-## Android and iOS
+### Android, iOS and Web
 
 ```typescript
 import Profiling from "@pass-culture/react-native-profiling";
 
-Profiling.profileDevice(ordId, fbServer, (sessionId) => console.log(sessionId));
+Profiling.profileDevice(orgId, fbServer, setSessionId, getSessionId, captureException);
 ```
 
-### Web 
-
-
-```typescript
-import Profiling from "@pass-culture/react-native-profiling";
-
-Profiling.profileDevice(ordId, fbServer, (sessionId) => console.log(sessionId), getSessionId, captureException);
-```
+| **Arguments**      | **Type**                                                          | **Required** | **Description**                                             |
+|--------------------|-------------------------------------------------------------------|--------------|-------------------------------------------------------------|
+| `orgId`            | `string`                                                          | yes          | Id for the organization.                                    |
+| `fbServer`         | `string`                                                          | yes          | Fb server URL.                                              |
+| `setSessionId`     | `(sessionId: string) => void`                                     | yes          | callback can be used to get `sessionId`.                    |
+| `getSessionId`     | `() => Promise<{ sessionId: string}>`                             | yes          | Async function returning promise with `{ sessionId }`.      |
+| `captureException` | `(exception: unknown, context?: Record<string, unknown>) => void` | yes          | Usually a sentry client, to catch `error` from this module. |
