@@ -5,7 +5,7 @@ interface ProfilingInterface {
     orgId: string,
     fpServer: string,
     callback: (sessionId: string) => void,
-    getSessionId?: Promise<{ sessionId: string }>,
+    getSessionId?: () => Promise<{ sessionId: string }>,
     captureException?: (
       exception: unknown,
       captureContext?: Record<string, unknown>
@@ -17,13 +17,13 @@ const profileDevice = async (
   orgId: string,
   fpServer: string,
   callback: (sessionId: string) => void,
-  getSessionId: Promise<{ sessionId: string }>,
+  getSessionId: () => Promise<{ sessionId: string }>,
   captureException: (
     exception: unknown,
     captureContext?: Record<string, unknown>
   ) => void
 ) => {
-  getSessionId
+  getSessionId()
     .then(({ sessionId }: { sessionId: string }) => {
       if (!sessionId) {
         captureException(
